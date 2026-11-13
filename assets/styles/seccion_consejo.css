@@ -1,0 +1,86 @@
+.seccion-consejo {
+  background-color: #f3f3f3;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  height: calc(100vh - 3.75rem);
+  align-items: center;
+}
+
+.consejo-contenido {
+  display: grid;
+  gap: 1rem;
+  background-color: #2f8a35;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  opacity: 75%;
+}
+
+.contenido-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenido-top i {
+  font-size: 2rem;
+  color: white;
+}
+
+.contenido-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenido-bottom h2 {
+  color: white;
+  width: 72%;
+}
+
+.contenido-bottom i {
+  font-size: 7rem;
+  color: #43c44c;
+}
+
+.card-consejo-guardado {
+  display: grid;
+  background-color: white;
+  padding: 3rem 2rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+
+.card-consejo {
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .seccion-consejo {
+    height: 100%;
+  }
+
+  .consejo-contenido {
+    padding: 1.5rem 1rem;
+  }
+
+  .contenido-top h3 {
+    font-size: 0.9rem;
+  }
+
+  .contenido-top i {
+    font-size: 1.5rem;
+  }
+  .contenido-bottom h2 {
+    font-size: 1rem;
+  }
+
+  .contenido-bottom i {
+    font-size: 4rem;
+    margin: none;
+  }
+  .card-consejo-guardado {
+    padding: 2rem;
+  }
+}

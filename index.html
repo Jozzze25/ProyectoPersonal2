@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TARE-ARMADO | Inicio</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <a class="saltar" href="#contenido">Ir hacia el contenido</a>
+
+    <!-- CABECERA -->
+    <header class="cabecera" id="inicio">
+      <div class="contenedor-barra">
+        <a class="logo" href="#inicio">TARE-ARMADO</a>
+
+        <!-- BOTÓN HAMBURGUESA (Visible en móviles/tablets) -->
+        <button
+          class="boton-hamburguesa"
+          id="btn-hamburguesa"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav
+          class="navegacion-principal"
+          id="nav-principal"
+          aria-label="MenuPrincipal"
+        >
+          <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Quiénes somos</a></li>
+            <li>
+              <details class="desplegable">
+                <summary>Zonas y Servicios</summary>
+                <ul class="submenu">
+                  <li><a href="#zonas">Panel de Zonas</a></li>
+                  <li><a href="#login">Iniciar Sesión</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- PRESENTACIÓN (HERO) -->
+      <section class="presentacion">
+        <div class="contenedor">
+          <p class="etiqueta">Conoce nuestros Servicios</p>
+          <h1>
+            Un espacio para ordenar, organizar y programar exámenes o tareas.
+          </h1>
+          <p>Archiva, planea y cumple tus metas.</p>
+          <div class="botones-hero">
+            <a class="boton" href="#zonas">Explorar Zonas</a>
+            <a class="boton boton-secundario" href="#login">Iniciar Sesión</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN ADAPTADA DE FIGMA 1: INICIO DE SESIÓN -->
+      <section class="seccion-figma" id="login">
+        <div class="contenedor">
+          <div class="tarjeta-login">
+            <div class="avatar-contenedor">
+              <img src="imagenes/avatar-perfil.jpg" alt="Avatar de usuario" />
+            </div>
+
+            <h2>Acceso a Plataforma</h2>
+
+            <form action="#zonas" method="get" class="formulario-login">
+              <input
+                type="text"
+                name="usuario"
+                placeholder="Usuario"
+                required
+              />
+              <input
+                type="password"
+                name="contrasena"
+                placeholder="Contraseña"
+                required
+              />
+              <button type="submit" class="boton-iniciar">
+                Iniciar Sesión
+              </button>
+            </form>
+
+            <div class="redes-login">
+              <p>O ingresa con:</p>
+              <div class="iconos-sociales">
+                <a
+                  href="#"
+                  aria-label="Ingresar con Gmail"
+                  class="icono-red gmail"
+                  >M</a
+                >
+                <a
+                  href="#"
+                  aria-label="Ingresar con Facebook"
+                  class="icono-red facebook"
+                  >f</a
+                >
+                <a
+                  href="#"
+                  aria-label="Ingresar con Correo"
+                  class="icono-red correo"
+                  >✉</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN ADAPTADA DE FIGMA 2: PANEL DE ZONAS -->
+      <section class="seccion-figma panel-usuario" id="zonas">
+        <div class="barra-bienvenida">
+          <div class="contenedor">
+            <h2>BIENVENIDO *NOMBRE DE USUARIO</h2>
+          </div>
+        </div>
+
+        <div class="contenedor">
+          <p class="Introduccion">
+            Selecciona el área en la que deseas trabajar hoy:
+          </p>
+
+          <!-- Cuadrícula de 4 tarjetas -->
+          <div class="cuadricula-zonas" id="servicios">
+            <!-- Tarjeta 1 -->
+            <article class="tarjeta-zona">
+              <img
+                src="imagenes/nino-haciendo-tarea.jpg"
+                alt="Zona de tareas"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+              <a href="#zona-tareas" class="etiqueta-zona">Zona de tareas</a>
+              <p>
+                Planeo y organización diaria de tus deberes escolares y
+                universitarios.
+              </p>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="tarjeta-zona">
+              <img
+                src="imagenes/imagen2.jpg"
+                alt="Zona de exámenes"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+              <a href="#zona-examenes" class="etiqueta-zona"
+                >Zona de exámenes</a
+              >
+              <p>
+                Prepárate con anticipación, repasa temarios y controla tus
+                evaluaciones.
+              </p>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="tarjeta-zona">
+              <img
+                src="imagenes/imagen3.jpg"
+                alt="Zona de Estudio"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+              <a href="#zona-estudio" class="etiqueta-zona">Zona de Estudio</a>
+              <p>
+                Espacio libre de distracciones para concentrarte y gestionar tus
+                sesiones.
+              </p>
+            </article>
+
+            <!-- Tarjeta 4 -->
+            <article class="tarjeta-zona">
+              <img
+                src="imagenes/imagen4.jpg"
+                alt="Zona de Calendario"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+              <a href="#zona-calendario" class="etiqueta-zona"
+                >Zona de Calendario</a
+              >
+              <p>
+                Visualiza fechas límite, recordatorios y eventos importantes del
+                mes.
+              </p>
+            </article>
+          </div>
+
+          <!-- Barra de navegación rápida -->
+          <nav class="barra-herramientas-web" aria-label="Herramientas rápidas">
+            <a href="#login" title="Cerrar sesión">🚪 Salir</a>
+            <a href="#configuracion" title="Configuración">⚙️ Ajustes</a>
+            <a href="#inicio" title="Inicio">🏠 Inicio</a>
+            <a href="javascript:history.back()" title="Volver">◀ Atrás</a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- SOBRE NOSOTROS -->
+      <section class="seccion" id="nosotros">
+        <div class="contenedor">
+          <p class="etiqueta">Sobre Nosotros</p>
+          <h2>Organización al límite</h2>
+          <p>
+            Este proyecto tiene como finalidad mejorar la eficiencia y
+            organización en las tareas y trabajos en niños, jóvenes y adultos.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie" id="contacto">
+      <div class="contenedor pie-contenido">
+        <div>
+          <h2>Conversemos</h2>
+          <a href="mailto:tarearmado@gmail.com">tarearmado@gmail.com</a>
+        </div>
+        <div>
+          <p>Síguenos en redes sociales</p>
+          <nav aria-label="Redes sociales" class="redes">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+              >Facebook</a
+            >
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+              >Instagram</a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="contenedor derechos">
+        <small>© 2026 TARE-ARMADO. Todos los derechos reservados.</small>
+      </div>
+    </footer>
+
+    <!-- SCRIPT PARA EL MENÚ HAMBURGUESA -->
+    <script>
+      const btnHamburguesa = document.getElementById("btn-hamburguesa");
+      const navPrincipal = document.getElementById("nav-principal");
+      const enlacesMenu = navPrincipal.querySelectorAll("a");
+
+      btnHamburguesa.addEventListener("click", () => {
+        const estaAbierto = navPrincipal.classList.toggle("abierto");
+        btnHamburguesa.classList.toggle("activo");
+        btnHamburguesa.setAttribute("aria-expanded", estaAbierto);
+      });
+
+      enlacesMenu.forEach((enlace) => {
+        enlace.addEventListener("click", () => {
+          navPrincipal.classList.remove("abierto");
+          btnHamburguesa.classList.remove("activo");
+          btnHamburguesa.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
+  </body>
+</html>

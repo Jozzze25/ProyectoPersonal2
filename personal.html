@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi sitio | Inicio</title>
+    <!-- Conectamos el archivo CSS. -->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+</html>
+
+<body>
+  <a class="saltar" href="contenido"> Ir hacia</a>
+
+  <!--CABECERA-->
+  <header class="cabecera" id="inicio">
+    <div class="contenedor-barra">
+      <!--logo-->
+      <a class="logo" href="#inicio"> TARE-ARMADO</a>
+
+      <!-- MENU HORIZONTAL-->
+      <nav aria-label="MenuPrincipal">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Quienes somos</a></li>
+          <li>
+            <!--desplegable-->
+            <details class="desplegable">
+              <summary>Servicios y Comentarios</summary>
+              <ul class="submenu">
+                <li><a href="#ZonaServicios">Servicios</a></li>
+                <li><a href="#ZonaComentarios">Comentarios</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class ="presentacion">
+      <div class ="contenedor">
+        <p class = "etiqueta">Conoce nuestros Servicios</p>
+        <h1> Un espacio para ordenar, organizar y progamar examenes o tareas. </h1>
+        <p> Archiva, planea y cumple tus metas.</p>
+        <a class="boton" href="#galeria"> Servicios</a>
+      </div>
+    </section>
+
+
+    <section class = "seccion" id="Quienes somos">
+      <div class="contenedor">
+        <p class = "etiqueta"> Sobre Nosotros</p>
+        <h2> Organizacion al limite</h2>
+        <p> Este proyecto tiene como finalidad mejorar la eficiencia y organizacion en las tareas y trabajos en niños, jovenes y adultos</p>
+      </div>
+    </section>
+
+
+    <section class = "seccion fondo suave" id="galeria" >
+      <div class ="contenedor">
+        <p class="etiqueta"> Galeria de Logros / Comentarios / Servicios </p>
+        <h2> Galeria de imagenes</h2>
+        <p class = "Introduccion"> Resumen de comentarios, servicios que ofrecemos y proyectos futurs </p>
+
+        <div class= "fila-galeria" id="servicios">
+          <div class="tarjeta">
+
+            <img src="imagenes/nino-haciendo-tarea.jpg" alt= "Servicio1" width="600" height="400" loading="lazy">
+            <div class="texto-tarjeta">
+              <h3>Servicio 1 </h3>
+              <p>Planeo y organizacion de tareas</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Pie de página: información de contacto y redes sociales. -->
+    <footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+            <div>
+                <h2>Conversemos</h2>
+                <!-- Reemplazar por el correo del proyecto. -->
+                <a href="mailto:tarearmado@gmail.com">tarearmado@gmail.com</a>
+            </div>
+            <div>
+                <p>Síguenos en redes sociales</p>
+                <nav aria-label="Redes sociales" class="redes">
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.gmail.com/">Instagram</a>
+                </nav>
+            </div>
+        </div>
+        <div class="contenedor derechos">
+            <small>© 2026 Mi sitio. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
